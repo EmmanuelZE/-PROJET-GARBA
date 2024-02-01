@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+}
+/* header */
+header{
+    background-color: black;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+header a.logo {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+header a.logo span {
+    color: orange;
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    column-gap: 30px;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li a.active {
+    border-bottom: 5px solid green;
+    padding-bottom: 28px;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid orange;
+    padding-bottom: 28px;
+    transition: 0.5s;
+}
+nav label i {
+    color: green
+}
+
+/* MENU DE NAVIGATION RESPONSIVE */
+
+section.container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+nav input {
+    display: none;
+    padding: 20px;
+}
+
+nav label{
+    display: none;
+}
+/* BANNIERRE */
+div#bannierre {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div#bannierre h5 {
+    color: orange;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+div#bannierre h1 {
+    font-size: 55px;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+div#monmenus h2 {
+    font-size: 55px;
+    color:black;
+    letter-spacing: 10px;
+    justify-content: space-between;
+}
+div#bannierre a {
+    color:green;
+    border: 1px solid green;
+    padding: 10px 30px;
+    background-color: rgb(130, 84, 0);
+    letter-spacing: 5px;
+}
+
+/* contact-container */
+.container h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.contact-container{
+    display: flex;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.contact-container div{
+    width: 50%;
+}
+
+.contact-container .forms form div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-container .forms form textarea{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+
+}
+.contact-container .forms form input{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 0.5px solid rgb(208, 205, 205);
+}
+
+.contact-container .forms #envoyer-message{
+    background-color: green;
+    color: white;
+    width: 50%;
+}
+
+/* temoignage */
+.temoignage{
+    display: flex;
+    column-gap: 20px;
+}
+
+.temoignage div{
+    width: 20%;
+}
+.temoignage div img{
+    width: 100%;
+}
